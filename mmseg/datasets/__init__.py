@@ -40,7 +40,8 @@ from .transforms import (CLAHE, AdjustGamma, Albu, BioMedical3DPad,
                          ResizeShortestEdge, ResizeToMultiple, RGB2Gray,
                          SegRescale)
 from .voc import PascalVOCDataset
-
+from .transforms.depth_transforms import RandomDepthResizeCompensate, DepthRandomFlip, \
+                    RandomDepthCrop, DepthResize, DepthRandomRotate, GenerateDepthTarget, GenerateMetricDepthTarget, PackDepthInputs
 # yapf: enable
 __all__ = [
     'BaseSegDataset', 'BioMedical3DRandomCrop', 'BioMedical3DRandomFlip',
@@ -61,5 +62,7 @@ __all__ = [
     'MapillaryDataset_v2', 'Albu', 'LEVIRCDDataset',
     'LoadMultipleRSImageFromFile', 'LoadSingleRSImageFromFile',
     'ConcatCDInput', 'BaseCDDataset', 'DSDLSegDataset', 'BDD100KDataset',
-    'NYUDataset', 'HSIDrive20Dataset'
+    'NYUDataset', 'HSIDrive20Dataset', 'RandomDepthResizeCompensate',
+    'DepthRandomFlip', 'RandomDepthCrop', 'DepthResize', 'DepthRandomRotate',
+    'GenerateDepthTarget', 'GenerateMetricDepthTarget', 'PackDepthInputs'
 ]

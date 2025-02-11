@@ -36,6 +36,16 @@ from .stdc_head import STDCHead
 from .uper_head import UPerHead
 from .vpd_depth_head import VPDDepthHead
 
+from .vit_head import VitHead
+from .vit_depth_head import VitDepthHead
+from .vit_metric_depth_head import VitMetricDepthHead
+from .vit_normal_head import VitNormalHead
+from .vit_hdri_head import VitHDRIHead
+from .vit_pointmap_head import VitPointmapHead
+from .vit_stereo_pointmap_head import VitStereoPointmapHead
+from .vit_stereo_correspondences_head import VitStereoCorrespondencesHead
+from .vit_normal_head2 import VitNormalHead2
+
 __all__ = [
     'FCNHead', 'PSPHead', 'ASPPHead', 'PSAHead', 'NLHead', 'GCHead', 'CCHead',
     'UPerHead', 'DepthwiseSeparableASPPHead', 'ANNHead', 'DAHead', 'OCRHead',
@@ -44,5 +54,9 @@ __all__ = [
     'SETRMLAHead', 'DPTHead', 'SETRMLAHead', 'SegmenterMaskTransformerHead',
     'SegformerHead', 'ISAHead', 'STDCHead', 'IterativeDecodeHead',
     'KernelUpdateHead', 'KernelUpdator', 'MaskFormerHead', 'Mask2FormerHead',
-    'LightHamHead', 'PIDHead', 'DDRHead', 'VPDDepthHead', 'SideAdapterCLIPHead'
+    'LightHamHead', 'PIDHead', 'DDRHead', 'VPDDepthHead', 'SideAdapterCLIPHead',
+    'VitHead', 'VitDepthHead', 'VitNormalHead', 'VitHDRIHead', 'VitPointmapHead',
+    'VitStereoPointmapHead', 'VitMetricDepthHead', 'VitStereoCorrespondencesHead',
+    'VitNormalHead2'
 ]
+
