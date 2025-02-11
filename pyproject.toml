@@ -1,0 +1,32 @@
+
+[build-system]
+build-backend = "hatchling.build"
+requires = ["hatchling"]
+
+[tool.hatch.build.targets.sdist]
+include = ["mmseg"]
+
+[tool.hatch.build.targets.wheel]
+include = ["mmseg"]
+
+[project]
+name = "mmsegmentation"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.10.16"
+dependencies = [
+    "codecov>=2.1.13",
+    "flake8>=7.1.1",
+    "ftfy>=6.3.1",
+    "interrogate>=1.7.0",
+    "matplotlib>=3.10.0",
+    "numpy>=1.26.4",
+    "packaging>=24.2",
+    "prettytable>=3.14.0",
+    "pytest>=8.3.4",
+    "regex>=2024.11.6",
+    "scipy>=1.15.0",
+    "xdoctest>=0.10.0",
+    "yapf>=0.40.2",
+]
